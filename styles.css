@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background: crimson;
+    /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -34,6 +34,10 @@
     font-weight: 600;
 }
 
+.navbar .logo a span {
+    color: crimson;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -44,12 +48,17 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
 }
 
 /* Home section styling */
 .home {
     display: flex;
-    background: url() no-repeat center;
+    background: url('images/1129018.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
