@@ -175,6 +175,7 @@ section {
     transform: translateX(-50%);
 }
 
+/* Put img and text side by side */
 .about .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +187,7 @@ section {
     width: 45%;   
 }
 
-
+/* Img styling */
 .about .about-content .left img {
     height: 400px;
     width: 400px;
@@ -198,6 +199,40 @@ section {
     width: 55%;   
 }
 
+/* My name */
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+/* About me text */
+.about .about-content .right p {
+    text-align: justify;
+}
+
+/* Download resume style */
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
 
 /* Start responsive media queries */
 @media (max-width: 1104px) {
