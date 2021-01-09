@@ -17,9 +17,15 @@
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
 }
 
 .navbar .max-width {
@@ -36,8 +42,13 @@
 
 .navbar .logo a span {
     color: crimson;
+    transition: all 0.3s ease;
 }
 
+.navbar.sticky .logo a span {
+    color: #fff;
+
+}
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -55,14 +66,19 @@
     color: crimson;
 }
 
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+
+}
+
 /* Home section styling */
 .home {
     display: flex;
-    background: url('images/1129018.jpg') no-repeat center;
+    background: url('/Tieu-Portfolio/images/1129018.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    color: #111;
+    color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
