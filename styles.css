@@ -137,7 +137,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .services, .skills {
+.about, .services, .skills, .teams {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -243,19 +243,21 @@ section .title::after {
 }
 
 /* Services section styling */
-.services {
+.services, .teams {
     color: #fff;
     background: #111;
 }
 
 /* Make line white in '--what i provide-- */
-.services .title::before {
+.services .title::before,
+.teams .title::before {
     background: #fff;
 
 }
 
 /* Make background black */
-.services .title::after {
+.services .title::after,
+.teams .title::after {
     background: #111;
     content: "what i provide";
 }
@@ -396,6 +398,31 @@ section .title::after {
 .skills-content .right .mysql::before {
     width: 70%;
 }
+
+/* Teams section styling */
+.teams .title::after {
+    content: "who with me";
+}
+
+
+/* Style each card */
+.teams .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;   
+}
+
+
+
+
 
 
 
