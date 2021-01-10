@@ -131,16 +131,14 @@
     background: none;
 }
 
-/* About me section */
+/* All section stying */
+
 section {
     padding: 100px 0;
 }
 
-.about {
-    font-family: 'Poppins', sans-serif;
-}
 
-.about .title {
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -151,7 +149,7 @@ section {
 }
 
 /* Add line below the title */
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -162,9 +160,8 @@ section {
     transform: translateX(-50%);
 }
 
-/* Add --who am i-- */
-.about .title::after {
-    content: "who am i?";
+
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -175,8 +172,20 @@ section {
     transform: translateX(-50%);
 }
 
+/* About me section */
+.about, .services {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add --who am i-- */
+.about .title::after {
+    content: "who am i?";
+
+}
+
 /* Put img and text side by side */
-.about .about-content {
+
+.about .about-content, .services .serv-content  {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -233,6 +242,36 @@ section {
     color: crimson;
     background: none;
 }
+
+/* Services section styling */
+.services {
+    color: #fff;
+    background: #111;
+}
+
+/* Make line white in '--what i provide-- */
+.services .title::before {
+    background: #fff;
+
+}
+
+/* Make background black */
+.services .title::after {
+    background: #111;
+    content: "what i provide";
+}
+
+/* Style each card */
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+
 
 /* Start responsive media queries */
 @media (max-width: 1300px) {
