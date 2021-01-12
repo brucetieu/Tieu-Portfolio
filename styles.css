@@ -29,7 +29,12 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: crimson;
+    background: #fff;
+}
+
+.navbar.sticky .logo a,
+.navbar.sticky .menu a {
+    color: #111;
 }
 
 .navbar .max-width {
@@ -112,7 +117,7 @@ html {
 /* Home section styling */
 .home {
     display: flex;
-    background: url('/Tieu-Portfolio/images/1129018.jpg') no-repeat center;
+    background: url('/Tieu-Portfolio/images/background.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
