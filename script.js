@@ -17,6 +17,24 @@ $(document).ready(function() {
         $('html').animate({scrollTop: 0})
     });
 
+    // Typing animation
+    var typed = new Typed(".typing", {
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+
+
     // Toggle the menu / navbar
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
