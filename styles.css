@@ -73,12 +73,21 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    /* color: crimson; */
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #fff;
+    /* color: #fff; */
+    /* text-decoration: underline; */
 
+}
+
+.highlight {
+    background: rgba(255, 230, 0, 0.5);
+    padding: 3px 5px;
+    margin: -3px -5px;
+    line-height: 1.7;
+    border-radius: 3px;
 }
 
 /* Menu btn styling */
@@ -411,7 +420,21 @@ section .title::after {
 }
 
 /* Filling the lines according to percentage ranking */
-.skills-content .right .html::before {
+.skills-content .right .comfortable,
+.skills-content .right .familiar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    /* margin-bottom: 25px; */
+}
+
+.skills-content .right .comfortable-text,
+.skills-content .right .familiar-text {
+    text-align: center;
+    font-size: 20px;
+}
+/* .skills-content .right .html::before {
     width: 90%;
 }
 
@@ -433,11 +456,11 @@ section .title::after {
 
 .skills-content .right .mysql::before {
     width: 70%;
-}
+} */
 
 /* Teams section styling */
 .teams .title::after {
-    content: "who with me";
+    content: "what i built";
 }
 
 
@@ -475,11 +498,11 @@ section .title::after {
 
 /* Style the image */
 .teams .carousel .card img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;   
+    /* border-radius: 50%; */
+    /* border: 5px solid crimson;    */
     transition: all 0.3s ease;
 }
 
@@ -487,6 +510,25 @@ section .title::after {
     border-color: #fff;
 }
 
+.teams .carousel .box .tech-used-sorting,
+.teams .carousel .box .tech-used-active,
+.teams .carousel .box .tech-used-job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.teams .carousel .box .tech-used-sorting img, 
+.teams .carousel .box .tech-used-active img,
+.teams .carousel .box .tech-used-job img {
+    height: 48px;
+    width: 48px;
+}
+
+.teams .carousel .card a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Style the dots for going through the carousel */
 .owl-dots {
