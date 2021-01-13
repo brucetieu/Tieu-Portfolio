@@ -512,18 +512,45 @@ section .title::after {
 
 .teams .carousel .box .tech-used-sorting,
 .teams .carousel .box .tech-used-active,
-.teams .carousel .box .tech-used-job {
+.teams .carousel .box .tech-used-job,
+.teams .carousel .box .links {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
+
+.teams .carousel .box .links .see-live a {
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 8px;
+    /* margin-top: 10px; */
+    border-radius: 6px;
+    margin-right: 10px;
+    /* border: 2px solid crimson; */
+    transition: all 0.3s ease;
+}
+
+/* .teams .carousel .box .links a:hover {
+    color: white;
+    background: none;
+} */
+
 .teams .carousel .box .tech-used-sorting img, 
 .teams .carousel .box .tech-used-active img,
-.teams .carousel .box .tech-used-job img {
+.teams .carousel .box .tech-used-job img,
+.teams .carousel .box .links img {
     height: 48px;
     width: 48px;
 }
+
+/* .teams .carousel .box .links .github img {
+    cursor: pointer;
+} */
 
 .teams .carousel .card a {
     text-decoration: none;
