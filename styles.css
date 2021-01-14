@@ -304,7 +304,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
     background: #111;
-    content: "what i provide";
+    content: "what i like";
 }
 
 /* Style each card */
@@ -341,7 +341,7 @@ section .title::after {
     color: #fff;
 }
 
-.services .serv-content .card text {
+.services .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -622,6 +622,7 @@ section .title::after {
 /* Color the icon */
 .contact .contact-content .row i {
     font-size: 25px;
+    /* padding: 5px; */
     color: crimson;
 }
 
@@ -711,6 +712,9 @@ section .title::after {
 footer {
     background: #111;
     padding: 20px 23px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: #fff;
 }
 
@@ -721,8 +725,9 @@ footer span a {
 
 footer span a:hover {
     text-decoration: underline;
-
 }
+
+
 
 
 
