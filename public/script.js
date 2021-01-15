@@ -122,12 +122,12 @@ function submitForm(e) {
     saveContactInfo(name, email, subject, message);
     
     // Show alert
-    // document.querySelector('.alert').style.display = "block";
+    document.querySelector('.alert').style.display = "block";
 
-    // // Hide alert after 3 seconds
-    // setTimeout(function() {
-    //     document.querySelector('.alert').style.display = "none";
-    // }, 3000)
+    // Hide alert after 3 seconds
+    setTimeout(function() {
+        document.querySelector('.alert').style.display = "none";
+    }, 3000)
 
     // Reset fields
     document.querySelector('.contact-form').reset()
