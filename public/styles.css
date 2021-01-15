@@ -29,12 +29,13 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #111;
+    background: #fff;
 }
 
 .navbar.sticky .logo a,
-.navbar.sticky .menu a {
-    color: #fff;
+.navbar.sticky .menu a,
+.navbar.sticky .menu-btn {
+    color: #111;
 }
 
 .navbar .max-width {
@@ -45,8 +46,8 @@ html {
 
 .navbar .logo a {
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .navbar .logo a span {
@@ -784,20 +785,25 @@ footer span a:hover {
 
     /* Toggle x button before (let it be the first child before the hamburger icon. */
     .menu-btn i.active::before {
+        color: #111;
         content: "\f00d";
     }
     
     .navbar .menu {
         position: fixed;
-        height: 100vh;
+        height: 40vh;
         width: 100%;
         left: -100%; /* hide from screen */
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 50px;
         transition: all 0.3s ease;
     }
+
+    /* .navbar .menu a {
+        color: #111;
+    } */
 
     /* Display dropdown when clicked via toggleClass("active"). */
     .navbar .menu.active {
@@ -810,8 +816,9 @@ footer span a:hover {
 
     .navbar .menu li a {
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 5px 0;
+        font-size: 20px;
+        color: #111;
     }
 
     .home .home-content .text-2 {
