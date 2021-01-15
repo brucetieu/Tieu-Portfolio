@@ -29,12 +29,12 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #fff;
+    background: #111;
 }
 
 .navbar.sticky .logo a,
 .navbar.sticky .menu a {
-    color: #111;
+    color: #fff;
 }
 
 .navbar .max-width {
@@ -126,7 +126,7 @@ html {
 /* Home section styling */
 .home {
     display: flex;
-    background: url('/images/background.jpg') no-repeat center;
+    background: url('images/background.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -805,7 +805,7 @@ footer span a:hover {
     }
 
     .navbar .menu li {
-        display: block;
+        display: block; 
     }
 
     .navbar .menu li a {
@@ -896,4 +896,5 @@ footer span a:hover {
         font-size: 27px;
     }
 }
+
 
