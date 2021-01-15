@@ -888,6 +888,10 @@ footer span a:hover {
         width: 100%
     }
 
+    .about .about-content .right .text {
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 500px) {
