@@ -170,7 +170,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .interests, .skills, .teams, .contact, footer  {
+.about, .interests, .skills, .coding-projects, .contact, footer  {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -277,21 +277,21 @@ section .title::after {
 }
 
 /* Interests section styling */
-.interests, .teams {
+.interests, .coding-projects {
     color: #fff;
     background: #111;
 }
 
 /* Make line white in '--what i like-- */
 .interests .title::before,
-.teams .title::before {
+.coding-projects .title::before {
     background: #fff;
 
 }
 
 /* Make background black */
 .interests .title::after,
-.teams .title::after {
+.coding-projects .title::after {
     background: #111;
     content: "what i like";
 }
@@ -425,13 +425,13 @@ section .title::after {
 
 
 /* Teams section styling */
-.teams .title::after {
+.coding-projects .title::after {
     content: "what i built";
 }
 
 
 /* Style each card */
-.teams .carousel .card {
+.coding-projects .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -440,11 +440,11 @@ section .title::after {
 }
 
 /* Change color on hover */
-.teams .carousel .card:hover {
+.coding-projects .carousel .card:hover {
     background: crimson;
 }
 
-.teams .carousel .card .box {
+.coding-projects .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,18 +452,18 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box {
+.coding-projects .carousel .card:hover .box {
     transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.coding-projects .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
 /* Style the image */
-.teams .carousel .card img {
+.coding-projects .carousel .card img {
     height: 125px;
     width: 125px;
     object-fit: cover;
@@ -474,10 +474,10 @@ section .title::after {
     border-color: #fff;
 } */
 
-.teams .carousel .box .tech-used-sorting,
-.teams .carousel .box .tech-used-active,
-.teams .carousel .box .tech-used-job,
-.teams .carousel .box .links {
+.coding-projects .carousel .box .tech-used-sorting,
+.coding-projects .carousel .box .tech-used-active,
+.coding-projects .carousel .box .tech-used-job,
+.coding-projects .carousel .box .links {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -485,7 +485,7 @@ section .title::after {
     margin-top: 15px;
 }
 
-.teams .carousel .box .links .see-live a {
+.coding-projects .carousel .box .links .see-live a {
     display: inline-block;
     background: #fff;
     color: #111;
@@ -504,10 +504,10 @@ section .title::after {
     background: none;
 } */
 
-.teams .carousel .box .tech-used-sorting img, 
-.teams .carousel .box .tech-used-active img,
-.teams .carousel .box .tech-used-job img,
-.teams .carousel .box .links img {
+.coding-projects .carousel .box .tech-used-sorting img, 
+.coding-projects .carousel .box .tech-used-active img,
+.coding-projects .carousel .box .tech-used-job img,
+.coding-projects .carousel .box .links img {
     height: 48px;
     width: 48px;
 }
@@ -516,7 +516,7 @@ section .title::after {
     cursor: pointer;
 } */
 
-.teams .carousel .card a {
+.coding-projects .carousel .card a {
     text-decoration: none;
     color: #fff;
 }
