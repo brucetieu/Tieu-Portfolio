@@ -58,7 +58,7 @@ particlesJS("particle-bg", {
         "enable": true,
         "speed": 2,
         "direction": "none",
-        "random": true,
+        "random": false,
         "straight": false,
         "out_mode": "out",
         "bounce": false,

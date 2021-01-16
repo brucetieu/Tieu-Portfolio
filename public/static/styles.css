@@ -598,12 +598,6 @@ section .title::after {
     margin-left: 30px;
 }
 
-/* Color the icon */
-.contact .contact-content .row i {
-    font-size: 25px;
-    /* padding: 5px; */
-    color: crimson;
-}
 
 /* Style header */
 .contact .contact-content .info .head {
@@ -665,6 +659,7 @@ section .title::after {
     width: 170px;
 }
 
+/* Send message button */
 .contact .right form .button button {
     width: 100%;
     height: 100%;
@@ -692,6 +687,7 @@ section .title::after {
     margin-bottom: 10px;
     display: none;
 }
+
 /* Style footer section */
 footer {
     background: #111;
@@ -729,7 +725,6 @@ footer span a:hover {
         width: 350px;
     }
     
-
 }
 
 
