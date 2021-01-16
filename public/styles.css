@@ -18,6 +18,7 @@ html {
     margin: auto;
 }
 
+/* Particle background */
 #particle-bg {
     background-color: #000;
     height: 100vh;
@@ -39,6 +40,7 @@ html {
     transition: all 0.3s ease;
 }
 
+/* Styling for when user scrolls down */
 .navbar.sticky {
     padding: 15px 0;
     background: #fff;
@@ -60,17 +62,11 @@ html {
     color: #fff;
     font-size: 25px;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.navbar .logo a span {
-    color: crimson;
-    transition: all 0.3s ease;
-}
 
-.navbar.sticky .logo a span {
-    color: #fff;
-
-}
+/* Style each tab */
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -85,16 +81,12 @@ html {
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
-    /* color: crimson; */
+.navbar .menu li a:hover,
+.navbar .logo a:hover {
+    color: crimson;
 }
 
-.navbar.sticky .menu li a:hover {
-    /* color: #fff; */
-    /* text-decoration: underline; */
-
-}
-
+/* Highlight key words */
 .highlight {
     background: rgba(255, 230, 0, 0.5);
     padding: 3px 5px;
@@ -111,6 +103,7 @@ html {
     display: none;
 }
 
+/* Style scroll up btn */
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -137,22 +130,8 @@ html {
 }
 
 
-/* Home section styling */
-/* .home {
-    display: flex;
-    z-index: 999;
-    background-image: url('images/background2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    image-rendering: -webkit-optimize-contrast;
-    background-attachment: fixed;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
-} */
 
+/* Begin styling of home content */
 .home .home-content{
     position: absolute;
     top: 50%;
@@ -166,6 +145,7 @@ html {
 
 .home .home-content .text-1 {
     font-size: 27px;
+    margin-bottom: 10px;
 }
 
 .home .home-content .text-2 {
