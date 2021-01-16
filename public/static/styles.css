@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -17,6 +18,18 @@ html {
     margin: auto;
 }
 
+/* Particle background */
+#particle-bg {
+    background-color: #000;
+    height: 100vh;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 /* Navbar styling */
 .navbar {
     position: fixed;
@@ -27,6 +40,7 @@ html {
     transition: all 0.3s ease;
 }
 
+/* Styling for when user scrolls down */
 .navbar.sticky {
     padding: 15px 0;
     background: #fff;
@@ -48,17 +62,11 @@ html {
     color: #fff;
     font-size: 25px;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.navbar .logo a span {
-    color: crimson;
-    transition: all 0.3s ease;
-}
 
-.navbar.sticky .logo a span {
-    color: #fff;
-
-}
+/* Style each tab */
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -73,16 +81,13 @@ html {
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
-    /* color: crimson; */
+/* Change color of tab when hovered on */
+.navbar .menu li a:hover,
+.navbar .logo a:hover {
+    color: crimson;
 }
 
-.navbar.sticky .menu li a:hover {
-    /* color: #fff; */
-    /* text-decoration: underline; */
-
-}
-
+/* Highlight key words */
 .highlight {
     background: rgba(255, 230, 0, 0.5);
     padding: 3px 5px;
@@ -99,6 +104,7 @@ html {
     display: none;
 }
 
+/* Style scroll up btn */
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -124,16 +130,14 @@ html {
     pointer-events: auto;
 }
 
-/* Home section styling */
-.home {
-    display: flex;
-    background: url('images/background.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+
+
+/* Begin styling of home content */
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
 }
 
 .home .max-width {
@@ -142,6 +146,7 @@ html {
 
 .home .home-content .text-1 {
     font-size: 27px;
+    margin: 10px 0;
 }
 
 .home .home-content .text-2 {
@@ -152,43 +157,26 @@ html {
 
 .home .home-content .text-3 {
     font-size: 40px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .home .home-content .text-3 span {
     color: crimson;
 }
 
-.home .home-content a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: crimson;
-    background: none;
-}
 
 /* All section stying */
-
 section {
     padding: 100px 0;
 }
 
-.about, .services, .skills, .teams, .contact, footer  {
+.about, .interests, .skills, .coding-projects, .contact, footer  {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Put img and text side by side */
 .about .about-content, 
-.services .serv-content, 
+.interests .interest-content, 
 .skills .skills-content,
 .contact .contact-content  {
     display: flex;
@@ -269,7 +257,7 @@ section .title::after {
     text-align: justify;
 }
 
-/* Download resume style */
+/* Download resume button style */
 .about .about-content .right a {
     display: inline-block;
     background: crimson;
@@ -288,28 +276,28 @@ section .title::after {
     background: none;
 }
 
-/* Services section styling */
-.services, .teams {
+/* Interests section styling */
+.interests, .coding-projects {
     color: #fff;
     background: #111;
 }
 
-/* Make line white in '--what i provide-- */
-.services .title::before,
-.teams .title::before {
+/* Make line white in '--what i like-- */
+.interests .title::before,
+.coding-projects .title::before {
     background: #fff;
 
 }
 
 /* Make background black */
-.services .title::after,
-.teams .title::after {
+.interests .title::after,
+.coding-projects .title::after {
     background: #111;
     content: "what i like";
 }
 
 /* Style each card */
-.services .serv-content .card {
+.interests .interest-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -318,31 +306,30 @@ section .title::after {
     cursor: pointer;
 }
 
-.services .serv-content .card:hover {
+.interests .interest-content .card:hover {
     background: crimson;
 }
 
-.services .serv-content .card .box {
+.interests .interest-content .card .box {
     transition: all 0.3s ease;
 }
 
 /* Make text big when hovering over the cards */
-.services .serv-content .card:hover .box {
+.interests .interest-content .card:hover .box {
     transform: scale(1.05);
-
 }
 
-.services .serv-content .card i {
+.interests .interest-content .card i {
     font-size: 50px;
     color: crimson;   
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.interests .interest-content .card:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.interests .interest-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -435,38 +422,16 @@ section .title::after {
     text-align: center;
     font-size: 20px;
 }
-/* .skills-content .right .html::before {
-    width: 90%;
-}
 
-.skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
-    width: 50%;
-}
-
-.skills-content .right .python::before {
-    width: 60%;
-}
-
-.skills-content .right .java::before {
-    width: 50%;
-}
-
-.skills-content .right .mysql::before {
-    width: 70%;
-} */
 
 /* Teams section styling */
-.teams .title::after {
+.coding-projects .title::after {
     content: "what i built";
 }
 
 
 /* Style each card */
-.teams .carousel .card {
+.coding-projects .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -475,11 +440,11 @@ section .title::after {
 }
 
 /* Change color on hover */
-.teams .carousel .card:hover {
+.coding-projects .carousel .card:hover {
     background: crimson;
 }
 
-.teams .carousel .card  .box {
+.coding-projects .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,34 +452,32 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box {
+.coding-projects .carousel .card:hover .box {
     transform: scale(1.05);
 }
 
-.teams .carousel .card  .text {
+.coding-projects .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
 /* Style the image */
-.teams .carousel .card img {
+.coding-projects .carousel .card img {
     height: 125px;
     width: 125px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    /* border: 5px solid crimson;    */
     transition: all 0.3s ease;
 }
-
+/* 
 .teams .carousel .card:hover img {
     border-color: #fff;
-}
+} */
 
-.teams .carousel .box .tech-used-sorting,
-.teams .carousel .box .tech-used-active,
-.teams .carousel .box .tech-used-job,
-.teams .carousel .box .links {
+.coding-projects .carousel .box .tech-used-sorting,
+.coding-projects .carousel .box .tech-used-active,
+.coding-projects .carousel .box .tech-used-job,
+.coding-projects .carousel .box .links {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -522,7 +485,7 @@ section .title::after {
     margin-top: 15px;
 }
 
-.teams .carousel .box .links .see-live a {
+.coding-projects .carousel .box .links .see-live a {
     display: inline-block;
     background: #fff;
     color: #111;
@@ -541,10 +504,10 @@ section .title::after {
     background: none;
 } */
 
-.teams .carousel .box .tech-used-sorting img, 
-.teams .carousel .box .tech-used-active img,
-.teams .carousel .box .tech-used-job img,
-.teams .carousel .box .links img {
+.coding-projects .carousel .box .tech-used-sorting img, 
+.coding-projects .carousel .box .tech-used-active img,
+.coding-projects .carousel .box .tech-used-job img,
+.coding-projects .carousel .box .links img {
     height: 48px;
     width: 48px;
 }
@@ -553,7 +516,7 @@ section .title::after {
     cursor: pointer;
 } */
 
-.teams .carousel .card a {
+.coding-projects .carousel .card a {
     text-decoration: none;
     color: #fff;
 }
@@ -574,6 +537,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
+
 /* Change width and border radius on click */
 .owl-dot.active {
     width: 35px;
@@ -583,6 +547,19 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover {
     background: crimson!important;
+}
+
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
 
 /* Style contact section */
@@ -614,18 +591,13 @@ section .title::after {
     display: flex;
     height: 65px;
     align-items: center;
+    justify-content:flex-start;
 }
 
 .contact .contact-content .row .info {
     margin-left: 30px;
 }
 
-/* Color the icon */
-.contact .contact-content .row i {
-    font-size: 25px;
-    /* padding: 5px; */
-    color: crimson;
-}
 
 /* Style header */
 .contact .contact-content .info .head {
@@ -641,9 +613,6 @@ section .title::after {
     display: flex;
 }
 
-/* .contact .right form .fields {
-    display: flex;
-} */
 
 .contact .right form .field,
 .contact .right form .fields .field {
@@ -654,7 +623,7 @@ section .title::after {
 
 
 .contact .right form .textarea {
-    height: 80px;
+    height: 140px;
     width: 100%;
 }
 
@@ -690,6 +659,7 @@ section .title::after {
     width: 170px;
 }
 
+/* Send message button */
 .contact .right form .button button {
     width: 100%;
     height: 100%;
@@ -717,6 +687,7 @@ section .title::after {
     margin-bottom: 10px;
     display: none;
 }
+
 /* Style footer section */
 footer {
     background: #111;
@@ -740,15 +711,6 @@ footer span a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Start responsive media queries */
 @media (max-width: 1300px) {
     .home .max-width {
@@ -763,7 +725,6 @@ footer span a:hover {
         width: 350px;
     }
     
-
 }
 
 
@@ -855,7 +816,7 @@ footer span a:hover {
     }
 
     /* Media queries for cards */
-    .services .serv-content .card  {
+    .interests .interest-content .card  {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -884,7 +845,7 @@ footer span a:hover {
         font-size: 20px;
     }
 
-    .services .serv-content .card  {
+    .interests .interest-content .card  {
         width: 100%
     }
 

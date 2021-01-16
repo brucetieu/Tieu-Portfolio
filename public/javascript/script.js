@@ -1,26 +1,5 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyCpPECaIbxjutnPE1EaCKNx8PCHNo0_Pm8",
-//     authDomain: "bruce-no-middle-name-tieu.firebaseapp.com",
-//     projectId: "bruce-no-middle-name-tieu",
-//     storageBucket: "bruce-no-middle-name-tieu.appspot.com",
-//     messagingSenderId: "804306288174",
-//     appId: "1:804306288174:web:98ef58b4cbfd04488729bf",
-//     measurementId: "G-HSE803YRRD"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-// //   firebase.analytics();
-
-
-//   // Reference contactInfo collections
-//   let contactInfo = firebase.database().ref("infos");
-
-
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
     apiKey: "AIzaSyCpPECaIbxjutnPE1EaCKNx8PCHNo0_Pm8",
     authDomain: "bruce-no-middle-name-tieu.firebaseapp.com",
@@ -36,6 +15,8 @@
 // Reference contactInfo collections
   let contactInfo = firebase.database().ref("infos");
 
+
+// JQuery
 $(document).ready(function() {
     $(window).scroll(function() {
         if (this.scrollY > 20) {
@@ -57,7 +38,7 @@ $(document).ready(function() {
 
     // Typing animation
     var typed = new Typed(".typing", {
-        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "student, always"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -65,7 +46,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "always a student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -104,12 +85,11 @@ $(document).ready(function() {
 
 })
 
-// Firebase setup
+// Save data into firebase database.
 document.querySelector('.contact-form').addEventListener("submit", submitForm);
 
 function submitForm(e) {
     e.preventDefault();
-    console.log(123)
 
     // Get input values.
     let name = document.querySelector('._name').value;
