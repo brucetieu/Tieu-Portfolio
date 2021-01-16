@@ -81,6 +81,7 @@ html {
     transition: color 0.3s ease;
 }
 
+/* Change color of tab when hovered on */
 .navbar .menu li a:hover,
 .navbar .logo a:hover {
     color: crimson;
@@ -163,36 +164,19 @@ html {
     color: crimson;
 }
 
-.home .home-content a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: crimson;
-    background: none;
-}
 
 /* All section stying */
-
 section {
     padding: 100px 0;
 }
 
-.about, .services, .skills, .teams, .contact, footer  {
+.about, .interests, .skills, .teams, .contact, footer  {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Put img and text side by side */
 .about .about-content, 
-.services .serv-content, 
+.interests .interest-content, 
 .skills .skills-content,
 .contact .contact-content  {
     display: flex;
@@ -273,7 +257,7 @@ section .title::after {
     text-align: justify;
 }
 
-/* Download resume style */
+/* Download resume button style */
 .about .about-content .right a {
     display: inline-block;
     background: crimson;
@@ -292,28 +276,28 @@ section .title::after {
     background: none;
 }
 
-/* Services section styling */
-.services, .teams {
+/* Interests section styling */
+.interests, .teams {
     color: #fff;
     background: #111;
 }
 
-/* Make line white in '--what i provide-- */
-.services .title::before,
+/* Make line white in '--what i like-- */
+.interests .title::before,
 .teams .title::before {
     background: #fff;
 
 }
 
 /* Make background black */
-.services .title::after,
+.interests .title::after,
 .teams .title::after {
     background: #111;
     content: "what i like";
 }
 
 /* Style each card */
-.services .serv-content .card {
+.interests .interest-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -322,31 +306,30 @@ section .title::after {
     cursor: pointer;
 }
 
-.services .serv-content .card:hover {
+.interests .interest-content .card:hover {
     background: crimson;
 }
 
-.services .serv-content .card .box {
+.interests .interest-content .card .box {
     transition: all 0.3s ease;
 }
 
 /* Make text big when hovering over the cards */
-.services .serv-content .card:hover .box {
+.interests .interest-content .card:hover .box {
     transform: scale(1.05);
-
 }
 
-.services .serv-content .card i {
+.interests .interest-content .card i {
     font-size: 50px;
     color: crimson;   
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.interests .interest-content .card:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.interests .interest-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -860,7 +843,7 @@ footer span a:hover {
     }
 
     /* Media queries for cards */
-    .services .serv-content .card  {
+    .interests .interest-content .card  {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -889,7 +872,7 @@ footer span a:hover {
         font-size: 20px;
     }
 
-    .services .serv-content .card  {
+    .interests .interest-content .card  {
         width: 100%
     }
 
