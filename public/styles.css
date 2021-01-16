@@ -146,7 +146,7 @@ html {
 
 .home .home-content .text-1 {
     font-size: 27px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .home .home-content .text-2 {
@@ -157,7 +157,7 @@ html {
 
 .home .home-content .text-3 {
     font-size: 40px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .home .home-content .text-3 span {
@@ -422,29 +422,7 @@ section .title::after {
     text-align: center;
     font-size: 20px;
 }
-/* .skills-content .right .html::before {
-    width: 90%;
-}
 
-.skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
-    width: 50%;
-}
-
-.skills-content .right .python::before {
-    width: 60%;
-}
-
-.skills-content .right .java::before {
-    width: 50%;
-}
-
-.skills-content .right .mysql::before {
-    width: 70%;
-} */
 
 /* Teams section styling */
 .teams .title::after {
@@ -466,7 +444,7 @@ section .title::after {
     background: crimson;
 }
 
-.teams .carousel .card  .box {
+.teams .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,7 +456,7 @@ section .title::after {
     transform: scale(1.05);
 }
 
-.teams .carousel .card  .text {
+.teams .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -489,14 +467,12 @@ section .title::after {
     height: 125px;
     width: 125px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    /* border: 5px solid crimson;    */
     transition: all 0.3s ease;
 }
-
+/* 
 .teams .carousel .card:hover img {
     border-color: #fff;
-}
+} */
 
 .teams .carousel .box .tech-used-sorting,
 .teams .carousel .box .tech-used-active,
@@ -561,6 +537,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
+
 /* Change width and border radius on click */
 .owl-dot.active {
     width: 35px;
@@ -570,6 +547,19 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover {
     background: crimson!important;
+}
+
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
 
 /* Style contact section */
@@ -629,9 +619,6 @@ section .title::after {
     display: flex;
 }
 
-/* .contact .right form .fields {
-    display: flex;
-} */
 
 .contact .right form .field,
 .contact .right form .fields .field {
@@ -723,15 +710,6 @@ footer span a {
 footer span a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
 
 
 
