@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     // Typing animation
     var typed = new Typed(".typing", {
-        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "always a student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["aspiring software engineer", "life long learner", "problem solver", "technology enthusiast"],
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "always a student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

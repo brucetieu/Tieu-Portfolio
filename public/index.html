@@ -21,34 +21,35 @@
         <i class="fas fa-angle-up"></i>
     </div>
     
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Bruce Tieu</a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Interests</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+    <div id="particle-bg">
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Bruce Tieu</a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#services" class="menu-btn">Interests</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#teams" class="menu-btn">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Start home section -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Bruce Tieu</div>
-                <div class="text-3">And I am a <span class="typing">aspiring software engineer</span></div>
-                <!-- <a href="#">Hire me</a> -->
+        <!-- Start home section -->
+        <div class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Bruce Tieu</div>
+                    <div class="text-3">And I am a <span class="typing"></span></div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Start about section -->
     <section class="about" id="about">
@@ -59,8 +60,9 @@
                     <img src="images/bruce.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Bruce and I'm a <span class="typing-2">aspiring software engineer</span></div>
-                    <p>I have recently received a bachelors degree in mathematics and economics from the University of Colorado Denver. I am a <span class="highlight">hard-working</span>, <span class="highlight">humble</span>, and <span class="highlight">motivated</span> aspiring software engineer who is interested in solving problems. I hope to apply my educational math background, appetite for <span class="highlight">continual learning</span>, and knowledge gained from personal projects to iterate, test, and build new software solutions in an entry level software engineer role. </p>
+                    <div class="text">I'm Bruce, and I'm a <span class="typing-2"></span></div> <br>
+
+                    <p>I have recently received a bachelors degree in mathematics and economics from the University of Colorado Denver. I am a <span class="highlight">hard-working</span>, <span class="highlight">humble</span>, and <span class="highlight">motivated</span> aspiring software engineer who is interested in solving problems. I hope to apply my educational math background, appetite for <span class="highlight">continual learning</span>, and knowledge gained from personal projects to iterate, test, and build new software solutions in an entry level software engineering role. </p>
                     <a href="BT_SWE_Resume_Portfolio_2020.pdf" download>Download resume</a>
                 </div>
             </div>
@@ -194,21 +196,25 @@
                     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos eaque ducimus atque quidem itaque numquam mollitia harum libero nobis.</p> -->
                     <div class="icons">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <!-- <i class="fas fa-user"></i> -->
+                            <img src="https://img.icons8.com/dusk/48/000000/user-male-circle--v1.png"/>
                             <div class="info">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Bruce Tieu</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <!-- <i class="fas fa-map-marker-alt"></i> -->
+                            <img src="https://img.icons8.com/dusk/48/000000/user-location.png"/>
                             <div class="info">
                                 <div class="head">Location</div>
                                 <div class="sub-title">Denver, Colorado</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-envelope"></i>
+                            <!-- <i class="fas fa-envelope"></i> -->
+                            <img src="https://img.icons8.com/dusk/48/000000/email.png"/>
+
                             <div class="info">
                                 <div class="head">Email</div>
                                 <div class="sub-title">ucdbrucetieu@gmail.com</div>
@@ -225,7 +231,7 @@
                                 <input class="_name" type="text" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input class="_email" type="email" placeholder="Email" required>
+                                <input class="_email" type="email" placeholder="Your Email" required>
                             </div>
                         </div>
                             <div class="field">
@@ -255,8 +261,19 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- <script>
+    particlesJS.load('particles-js',
+    'particles.json',
+    function() {
+        console.log('particles.json loaded...')
+    })
+    </script> -->
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
+
