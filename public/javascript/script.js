@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "always a student"],
+        strings: ["aspiring software engineer", "life long learner", "problem solver", "tech lover", "student, always"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
